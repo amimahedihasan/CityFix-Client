@@ -17,7 +17,7 @@ const Home = () => {
             <RecentlResolved></RecentlResolved>
             <Powerful></Powerful>
             <HowItWorks></HowItWorks>
-            <Difference</Difference>
+            <Difference></Difference>
             <Testimonials></Testimonials>
             <Trusted></Trusted>
             <Faq></Faq>
