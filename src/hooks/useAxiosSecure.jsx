@@ -15,7 +15,7 @@ const useAxiosSecure = () => {
             }
             return config;
         },
-        error => Promise.reject(error)
+      
     );
 
     return instance;
