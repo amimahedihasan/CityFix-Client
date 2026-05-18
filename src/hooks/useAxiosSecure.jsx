@@ -3,6 +3,11 @@ import useAuth from "./useAuth";
 
 const useAxiosSecure = () => {
     const { user } = useAuth();
+    const useAuth = () => {
+        const authInfo = use(AuthContext);
+        return authInfo;
+    };
+    
     const instance = axios.create({
         baseURL: 'https://city-fix-server-nu.vercel.app'
     });
@@ -15,7 +20,7 @@ const useAxiosSecure = () => {
             }
             return config;
         },
-      
+        error => Promise.reject(error)
     );
 
     return instance;
