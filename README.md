@@ -1,194 +1,287 @@
-# CityFix  
-Public Infrastructure Issue Reporting System
+<div align="center">
 
-CityFix is a full-stack web application that allows citizens to report public infrastructure issues and enables government authorities to efficiently manage, assign, track, and resolve those issues through a transparent and role-based system.
+# CityFix
+### Public Infrastructure Issue Reporting System
 
----
+<br/>
 
-## Project Overview
+<p>
+CityFix is a modern full-stack civic engagement platform designed to bridge the gap between citizens and municipal authorities.
+The system empowers citizens to report real-world public infrastructure issues while enabling admins and staff members to efficiently manage, assign, track, and resolve issues through a powerful role-based workflow system.
+</p>
 
-Municipal infrastructure issues such as broken roads, garbage overflow, water leakage, and damaged footpaths often suffer from delayed responses and lack of transparency.  
-CityFix solves this problem by providing a centralized digital platform where:
+<br/>
 
-- Citizens can report issues
-- Admins can verify and assign issues
-- Staff can resolve issues
-- Everyone can track progress in real time
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+<img src="https://img.shields.io/badge/Firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 
----
-
-## How the System Works
-
-1. Citizens submit issues with title, description, image, category, and location.
-2. Admin reviews the issue and assigns it to a staff member.
-3. Assigned staff verifies the issue and updates progress.
-4. Issue status moves through the following stages:  
-   Pending → In-Progress → Working → Resolved → Closed
-5. Every important action creates a timeline record.
-6. Citizens can track updates at any time.
-7. Premium citizens receive priority services.
+</div>
 
 ---
 
-## Main Features (Requirement Based)
+# Live Website
 
-- Citizens can report public infrastructure issues.
-- Role-based system with Admin, Staff, and Citizen roles.
-- Secure authentication using Email/Password and Google Sign-In.
-- Fully responsive design for mobile, tablet, and desktop.
-- Private routes remain logged in after page refresh.
-- Issue upvote system with one upvote per user.
-- Users cannot upvote their own issues.
-- Issue priority boost through payment (100 TK per issue).
-- Premium subscription system (1000 TK).
-- Real-time UI updates using TanStack Query.
-- Toast and alert notifications for all CRUD actions.
-- No Lorem Ipsum text used anywhere.
-- Firebase and MongoDB secrets secured using environment variables.
+https://project-city-fix.netlify.app/
 
 ---
 
-## Home Page
-
-- Navbar with logo and navigation links.
-- User profile dropdown after login.
-- Attractive banner or slider section.
-- Latest resolved issues section (minimum six issues).
-- Features section.
-- How It Works section.
-- Additional sections for better user experience.
-- Fully functional footer.
-- Custom 404 Not Found page.
-
----
-
-## All Issues Page
-
-- Displays all reported issues in card format.
-- Each issue shows image, title, category, status badge, priority badge, location, and upvote count.
-- View Details button navigates to the issue details page.
-- Server-side pagination implemented.
-- Server-side search and filtering by category, status, and priority.
-- Upvote rules:
-  - Login required
-  - One upvote per user
-  - Users cannot upvote their own issues
-  - Boosted issues always appear above normal issues
-
----
-
-## Issue Details Page (Private Route)
-
-- Displays complete information about an issue.
-- Edit and delete options for issue owner if status is pending.
-- Boost issue priority button with payment integration.
-- Assigned staff information shown when available.
-- Issue timeline displaying:
-  - Issue creation
-  - Staff assignment
-  - Status changes
-  - Boost payment
-  - Issue closure
-
----
-
-## Citizen Dashboard
-
-### Dashboard Overview
-- Total submitted issues
-- Total pending issues
-- Total in-progress issues
-- Total resolved issues
-- Total payments
-- Statistics displayed using cards and charts
-
-### My Issues
-- View all issues submitted by the logged-in user
-- Filter by status and category
-- Edit pending issues using a pre-filled modal
-- Delete issues
-- Navigate to issue details page
-
-### Report Issue
-- Issue submission form with title, description, category, image upload, and location
-- Free users can submit a maximum of three issues
-- Premium users can submit unlimited issues
-- Timeline entry automatically added after submission
-
-### Profile
-- View and update user profile information
-- Premium subscription option
-- Premium badge display after subscription
-- Blocked user warning message if blocked by admin
-
----
-
-## Staff Dashboard
-
-- Staff can view only the issues assigned to them.
-- Dashboard statistics and charts.
-- Assigned issues displayed in tabular format.
-- Issue status workflow:
-  - Pending → In-Progress
-  - In-Progress → Working
-  - Working → Resolved
-  - Resolved → Closed
-- Timeline entry created for every status change.
-- Profile update functionality.
-
----
-
-## Admin Dashboard
-
-- Dashboard analytics with cards and charts.
-- View all issues with boosted issues appearing first.
-- Assign staff to issues (one-time assignment only).
-- Reject issues when status is pending.
-- Manage citizen users with block and unblock functionality.
-- Manage staff accounts (add, update, delete).
-- View all payments.
-- Downloadable invoice PDF.
-- View latest issues, users, and payment records.
-
----
-
-## Payment System
-
-- Stripe payment gateway integration.
-- Issue boost payment (100 TK per issue).
-- Premium subscription payment (1000 TK).
-- Payment history available for admin and users.
-- Invoice PDF download feature.
-
----
-
-## Security and Middleware
-
-- Firebase Authentication.
-- JWT-based token verification.
-- Role-based route and API protection.
-- Axios interceptors.
-- Environment variable protection for sensitive data.
-- Persistent private routes after page refresh.
-
----
-
-## Technology Stack
+# GitHub Repositories
 
 ### Client Side
-- React
-- React Router
-- Tailwind CSS / DaisyUI
-- TanStack Query
-- Axios
-- Firebase Authentication
-- Stripe
-- React PDF
+https://github.com/amimahedihasan/CityFix-Client.git
 
 ### Server Side
-- Node.js
-- Express.js
-- MongoDB
-- Firebase Admin SDK
-- JWT
-- Stripe API
+https://github.com/amimahedihasan/CityFix-Server.git
+
+---
+
+# Project Vision
+
+Modern cities face thousands of infrastructure problems every day — damaged roads, broken streetlights, garbage overflow, water leakage, and unsafe footpaths.
+Traditional reporting systems are often slow, inefficient, and lack transparency.
+
+CityFix solves these challenges by:
+
+- Creating a centralized issue reporting platform
+- Reducing response delays
+- Improving transparency between citizens and authorities
+- Tracking every issue lifecycle in real time
+- Prioritizing critical issues efficiently
+- Making municipal service delivery smarter and faster
+
+---
+
+# How The System Works
+
+### Citizens
+- Submit infrastructure issues
+- Upload images and locations
+- Track issue progress
+- Upvote important public issues
+- Purchase premium membership
+
+### Admin
+- Reviews and manages all issues
+- Assigns staff members
+- Controls users and staff
+- Monitors payments and reports
+- Manages platform activities
+
+### Staff
+- Works only on assigned issues
+- Updates progress and status
+- Resolves issues
+- Maintains activity timeline
+
+---
+
+# Core Features
+
+## Authentication & Security
+- Email & Password Authentication
+- Google Sign-In
+- JWT Token Verification
+- Role-Based Route Protection
+- Persistent Login After Refresh
+- Secure Environment Variables
+
+---
+
+## Smart Issue Reporting
+- Report real-world infrastructure problems
+- Upload issue image and location
+- Real-time status tracking
+- Timeline history system
+- Upvote system for public importance
+- Priority boosting through payment
+
+---
+
+## Powerful Dashboards
+
+### Citizen Dashboard
+- Report and manage issues
+- Track issue activities
+- Edit/Delete pending issues
+- Premium subscription support
+- Payment history
+- Analytics and statistics
+
+### Staff Dashboard
+- Assigned issue management
+- Status workflow system
+- Progress tracking
+- Real-time updates
+- Statistics overview
+
+### Admin Dashboard
+- Full issue management
+- Staff assignment system
+- User management
+- Staff management
+- Payment management
+- Analytics & charts
+- Invoice PDF generation
+
+---
+
+# Issue Workflow System
+
+Issues move through a complete lifecycle:
+
+```txt
+Pending → In-Progress → Working → Resolved → Closed
+```
+
+Every action automatically creates a timeline record including:
+- Issue creation
+- Staff assignment
+- Status updates
+- Boost payments
+- Issue closure
+- Admin actions
+
+---
+
+# Payment Features
+
+## Boost Priority
+Citizens can boost issue priority by paying 100 TK.
+
+## Premium Subscription
+Users can purchase premium membership for 1000 TK and unlock:
+- Unlimited issue reporting
+- Priority support
+- Premium badge
+
+## Invoice System
+- Downloadable PDF invoices
+- Payment history tracking
+- Admin payment monitoring
+
+---
+
+# Fully Responsive Design
+
+CityFix is optimized for:
+- Mobile Devices
+- Laptops
+- Desktop Screens
+- Tablets
+
+Every dashboard and page is carefully designed for a smooth user experience across all devices.
+
+---
+
+# Advanced Functionalities
+
+- Server-side pagination
+- Server-side search
+- Advanced filtering system
+- Real-time UI updates
+- Axios interceptors
+- Toast notifications
+- Loading states
+- Protected APIs
+- Smart role-based access
+- Modern responsive UI/UX
+
+---
+
+# Technology Stack
+
+## Frontend Technologies
+
+| Technology | Usage |
+|---|---|
+| React.js | Frontend Framework |
+| React Router | Routing System |
+| Tailwind CSS | Styling |
+| DaisyUI | UI Components |
+| TanStack Query | Data Fetching |
+| Firebase Auth | Authentication |
+| Axios | API Communication |
+| Stripe | Payment Integration |
+| React PDF | PDF Generation |
+
+---
+
+## Backend Technologies
+
+| Technology | Usage |
+|---|---|
+| Node.js | Runtime Environment |
+| Express.js | Backend Framework |
+| MongoDB | Database |
+| Firebase Admin SDK | Authentication Verification |
+| JWT | Secure Authorization |
+| Stripe API | Payment System |
+
+---
+
+# UI & User Experience Highlights
+
+- Modern glassmorphism inspired UI
+- Beautiful responsive layouts
+- Clean dashboard experience
+- Animated interactive components
+- Elegant status badges
+- User-friendly workflow design
+- Attractive issue cards
+- Smooth navigation system
+
+---
+
+# Demo Access
+
+Demo credentials for:
+- Admin
+- Staff
+- Citizen
+
+are provided separately according to submission requirements.
+
+The demo accounts already contain:
+- Assigned issues
+- Timeline records
+- Payment data
+- Premium users
+- Real-world testing scenarios
+
+---
+
+# Project Highlights
+
+- Full Stack MERN Application
+- Real-Time Issue Management
+- Advanced Role-Based System
+- Payment Integration
+- Timeline Tracking System
+- Premium Subscription Model
+- Professional Dashboard Design
+- Fully Responsive UI
+- Secure Authentication System
+- Optimized User Experience
+
+---
+
+# Acknowledgement
+
+This project was built with passion, creativity, and attention to detail to simulate a real-world civic issue management platform.
+CityFix represents a modern approach to digital public service systems with scalability, usability, and transparency at its core.
+
+---
+
+<div align="center">
+
+# Thank You For Visiting CityFix
+
+### Building smarter cities through technology
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer"/>
+
+</div>
