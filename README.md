@@ -5,31 +5,6 @@ CityFix is a full-stack web application that allows citizens to report public in
 
 ---
 
-## Live Website
-https://project-city-fix.netlify.app/
-
-
-## GitHub Repositories
-- Client Repository: https://github.com/rafiultalukdar1/CityFix-Client.git
-- Server Repository: https://github.com/rafiultalukdar1/CityFix-Server.git
-
----
-
-## Demo Access Information
-
-For evaluation purposes, role-based demo access (Admin, Staff, and Citizen)
-is provided separately according to the submission instructions.
-
-The provided demo accounts are pre-configured with real data so that reviewers can:
-- Access dashboards based on different user roles
-- Verify issue assignment and workflow
-- Review staff activities and issue progress
-- Test premium features and payment flows
-
-No additional account setup is required to evaluate the application.
-
----
-
 ## Project Overview
 
 Municipal infrastructure issues such as broken roads, garbage overflow, water leakage, and damaged footpaths often suffer from delayed responses and lack of transparency.  
